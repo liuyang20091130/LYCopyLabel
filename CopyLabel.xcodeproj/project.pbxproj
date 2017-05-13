@@ -13,7 +13,7 @@
 		AC67C88D1EC598F00081E15A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC67C88B1EC598F00081E15A /* Main.storyboard */; };
 		AC67C88F1EC598F00081E15A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC67C88E1EC598F00081E15A /* Assets.xcassets */; };
 		AC67C8921EC598F00081E15A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC67C8901EC598F00081E15A /* LaunchScreen.storyboard */; };
-		AC67C89B1EC599270081E15A /* LYCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC67C89A1EC599270081E15A /* LYCopyLabel.m */; };
+		AC67C89F1EC777150081E15A /* LYCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC67C89E1EC777150081E15A /* LYCopyLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		AC67C88E1EC598F00081E15A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC67C8911EC598F00081E15A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC67C8931EC598F00081E15A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC67C8991EC599270081E15A /* LYCopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCopyLabel.h; sourceTree = "<group>"; };
-		AC67C89A1EC599270081E15A /* LYCopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCopyLabel.m; sourceTree = "<group>"; };
+		AC67C89D1EC777150081E15A /* LYCopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCopyLabel.h; sourceTree = "<group>"; };
+		AC67C89E1EC777150081E15A /* LYCopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCopyLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +61,11 @@
 		AC67C8811EC598F00081E15A /* CopyLabel */ = {
 			isa = PBXGroup;
 			children = (
+				AC67C89C1EC777150081E15A /* LYCopyLabel */,
 				AC67C8851EC598F00081E15A /* AppDelegate.h */,
 				AC67C8861EC598F00081E15A /* AppDelegate.m */,
 				AC67C8881EC598F00081E15A /* ViewController.h */,
 				AC67C8891EC598F00081E15A /* ViewController.m */,
-				AC67C8991EC599270081E15A /* LYCopyLabel.h */,
-				AC67C89A1EC599270081E15A /* LYCopyLabel.m */,
 				AC67C88B1EC598F00081E15A /* Main.storyboard */,
 				AC67C88E1EC598F00081E15A /* Assets.xcassets */,
 				AC67C8901EC598F00081E15A /* LaunchScreen.storyboard */,
@@ -82,6 +81,15 @@
 				AC67C8831EC598F00081E15A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC67C89C1EC777150081E15A /* LYCopyLabel */ = {
+			isa = PBXGroup;
+			children = (
+				AC67C89D1EC777150081E15A /* LYCopyLabel.h */,
+				AC67C89E1EC777150081E15A /* LYCopyLabel.m */,
+			);
+			path = LYCopyLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC67C89F1EC777150081E15A /* LYCopyLabel.m in Sources */,
 				AC67C88A1EC598F00081E15A /* ViewController.m in Sources */,
-				AC67C89B1EC599270081E15A /* LYCopyLabel.m in Sources */,
 				AC67C8871EC598F00081E15A /* AppDelegate.m in Sources */,
 				AC67C8841EC598F00081E15A /* main.m in Sources */,
 			);
