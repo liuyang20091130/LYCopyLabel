@@ -8,7 +8,7 @@
 
 #import "LYCopyLabel.h"
 
-#define kDefalutBGColor  [UIColor grayColor]
+#define kDefalutBGColor  [UIColor lightGrayColor]
 
 @interface LYCopyLabel ()
 
