@@ -17,7 +17,7 @@
 		AC7754351EC995D800777BE2 /* LYActionLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7754341EC995D800777BE2 /* LYActionLabel.m */; };
 		AC7754381EC9C58000777BE2 /* LYCopyLabel.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC7754371EC9C57F00777BE2 /* LYCopyLabel.bundle */; };
 		AC77543D1EC9CF7200777BE2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC77543F1EC9CF7200777BE2 /* Localizable.strings */; };
-		AC7754421EC9D2DD00777BE2 /* LYCopyLabel.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AC7754411EC9D2DD00777BE2 /* LYCopyLabel.podspec */; };
+		AC7754441EC9D97100777BE2 /* LYCopyLabel.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AC7754431EC9D97100777BE2 /* LYCopyLabel.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 		AC77543A1EC9CE1F00777BE2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		AC77543E1EC9CF7200777BE2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		AC7754401EC9CF7700777BE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AC7754411EC9D2DD00777BE2 /* LYCopyLabel.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LYCopyLabel.podspec; sourceTree = "<group>"; };
+		AC7754431EC9D97100777BE2 /* LYCopyLabel.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LYCopyLabel.podspec; path = ../LYCopyLabel.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 				AC67C88E1EC598F00081E15A /* Assets.xcassets */,
 				AC67C8901EC598F00081E15A /* LaunchScreen.storyboard */,
 				AC67C8931EC598F00081E15A /* Info.plist */,
-				AC7754411EC9D2DD00777BE2 /* LYCopyLabel.podspec */,
+				AC7754431EC9D97100777BE2 /* LYCopyLabel.podspec */,
 				AC67C8821EC598F00081E15A /* Supporting Files */,
 			);
 			path = CopyLabel;
@@ -170,7 +170,7 @@
 				AC77543D1EC9CF7200777BE2 /* Localizable.strings in Resources */,
 				AC67C8921EC598F00081E15A /* LaunchScreen.storyboard in Resources */,
 				AC67C88F1EC598F00081E15A /* Assets.xcassets in Resources */,
-				AC7754421EC9D2DD00777BE2 /* LYCopyLabel.podspec in Resources */,
+				AC7754441EC9D97100777BE2 /* LYCopyLabel.podspec in Resources */,
 				AC7754381EC9C58000777BE2 /* LYCopyLabel.bundle in Resources */,
 				AC67C88D1EC598F00081E15A /* Main.storyboard in Resources */,
 			);
