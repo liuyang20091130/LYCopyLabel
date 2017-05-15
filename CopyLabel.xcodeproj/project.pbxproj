@@ -14,6 +14,11 @@
 		AC67C88F1EC598F00081E15A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC67C88E1EC598F00081E15A /* Assets.xcassets */; };
 		AC67C8921EC598F00081E15A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC67C8901EC598F00081E15A /* LaunchScreen.storyboard */; };
 		AC67C89F1EC777150081E15A /* LYCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC67C89E1EC777150081E15A /* LYCopyLabel.m */; };
+		AC7754101EC9532200777BE2 /* UIView+_LYAction.m in Sources */ = {isa = PBXBuildFile; fileRef = AC77540F1EC9532200777BE2 /* UIView+_LYAction.m */; };
+		AC7754351EC995D800777BE2 /* LYActionLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7754341EC995D800777BE2 /* LYActionLabel.m */; };
+		AC7754381EC9C58000777BE2 /* LYCopyLabel.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC7754371EC9C57F00777BE2 /* LYCopyLabel.bundle */; };
+		AC77543D1EC9CF7200777BE2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC77543F1EC9CF7200777BE2 /* Localizable.strings */; };
+		AC7754421EC9D2DD00777BE2 /* LYCopyLabel.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AC7754411EC9D2DD00777BE2 /* LYCopyLabel.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,16 @@
 		AC67C8931EC598F00081E15A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC67C89D1EC777150081E15A /* LYCopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCopyLabel.h; sourceTree = "<group>"; };
 		AC67C89E1EC777150081E15A /* LYCopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCopyLabel.m; sourceTree = "<group>"; };
+		AC77540E1EC9532200777BE2 /* UIView+_LYAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+_LYAction.h"; sourceTree = "<group>"; };
+		AC77540F1EC9532200777BE2 /* UIView+_LYAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+_LYAction.m"; sourceTree = "<group>"; };
+		AC7754331EC995D800777BE2 /* LYActionLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYActionLabel.h; sourceTree = "<group>"; };
+		AC7754341EC995D800777BE2 /* LYActionLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYActionLabel.m; sourceTree = "<group>"; };
+		AC7754371EC9C57F00777BE2 /* LYCopyLabel.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LYCopyLabel.bundle; sourceTree = "<group>"; };
+		AC7754391EC9CE1F00777BE2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		AC77543A1EC9CE1F00777BE2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		AC77543E1EC9CF7200777BE2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AC7754401EC9CF7700777BE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AC7754411EC9D2DD00777BE2 /* LYCopyLabel.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LYCopyLabel.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +81,12 @@
 				AC67C8861EC598F00081E15A /* AppDelegate.m */,
 				AC67C8881EC598F00081E15A /* ViewController.h */,
 				AC67C8891EC598F00081E15A /* ViewController.m */,
+				AC77543F1EC9CF7200777BE2 /* Localizable.strings */,
 				AC67C88B1EC598F00081E15A /* Main.storyboard */,
 				AC67C88E1EC598F00081E15A /* Assets.xcassets */,
 				AC67C8901EC598F00081E15A /* LaunchScreen.storyboard */,
 				AC67C8931EC598F00081E15A /* Info.plist */,
+				AC7754411EC9D2DD00777BE2 /* LYCopyLabel.podspec */,
 				AC67C8821EC598F00081E15A /* Supporting Files */,
 			);
 			path = CopyLabel;
@@ -88,6 +105,11 @@
 			children = (
 				AC67C89D1EC777150081E15A /* LYCopyLabel.h */,
 				AC67C89E1EC777150081E15A /* LYCopyLabel.m */,
+				AC7754331EC995D800777BE2 /* LYActionLabel.h */,
+				AC7754341EC995D800777BE2 /* LYActionLabel.m */,
+				AC77540E1EC9532200777BE2 /* UIView+_LYAction.h */,
+				AC77540F1EC9532200777BE2 /* UIView+_LYAction.m */,
+				AC7754371EC9C57F00777BE2 /* LYCopyLabel.bundle */,
 			);
 			path = LYCopyLabel;
 			sourceTree = "<group>";
@@ -150,8 +172,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC77543D1EC9CF7200777BE2 /* Localizable.strings in Resources */,
 				AC67C8921EC598F00081E15A /* LaunchScreen.storyboard in Resources */,
 				AC67C88F1EC598F00081E15A /* Assets.xcassets in Resources */,
+				AC7754421EC9D2DD00777BE2 /* LYCopyLabel.podspec in Resources */,
+				AC7754381EC9C58000777BE2 /* LYCopyLabel.bundle in Resources */,
 				AC67C88D1EC598F00081E15A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,7 +191,9 @@
 				AC67C89F1EC777150081E15A /* LYCopyLabel.m in Sources */,
 				AC67C88A1EC598F00081E15A /* ViewController.m in Sources */,
 				AC67C8871EC598F00081E15A /* AppDelegate.m in Sources */,
+				AC7754351EC995D800777BE2 /* LYActionLabel.m in Sources */,
 				AC67C8841EC598F00081E15A /* main.m in Sources */,
+				AC7754101EC9532200777BE2 /* UIView+_LYAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +204,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AC67C88C1EC598F00081E15A /* Base */,
+				AC7754391EC9CE1F00777BE2 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -185,8 +213,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				AC67C8911EC598F00081E15A /* Base */,
+				AC77543A1EC9CE1F00777BE2 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AC77543F1EC9CF7200777BE2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC77543E1EC9CF7200777BE2 /* zh-Hans */,
+				AC7754401EC9CF7700777BE2 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -196,6 +234,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -245,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -325,6 +365,7 @@
 				AC67C8981EC598F00081E15A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -100,13 +100,20 @@
         NSLog(@"%s \n",__func__);
         [self becomeFirstResponder];
         [self addMenuNotification];
-        UIMenuItem *copyLink = [[UIMenuItem alloc] initWithTitle:@"复制" action:@selector(_lyCopy:)];
+        UIMenuItem *copyLink = [[UIMenuItem alloc] initWithTitle:[self copyTitle] action:@selector(_lyCopy:)];
         [[UIMenuController sharedMenuController] setMenuItems:[NSArray arrayWithObjects:copyLink, nil]];
         [[UIMenuController sharedMenuController] setTargetRect:self.frame inView:self.superview];
         [[UIMenuController sharedMenuController] setMenuVisible:YES animated: YES];
         [self menuWillAppear];
     }
     
+}
+
+- (NSString *)copyTitle {
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"LYCopyLabel" ofType:@"bundle"];
+    NSBundle *bundle1 = [NSBundle bundleWithPath:bundlePath];
+    NSString *str = [bundle1 localizedStringForKey:@"Copy" value:@"Copy" table:nil];
+    return str;
 }
 
 #pragma mark - menu show & hide handle

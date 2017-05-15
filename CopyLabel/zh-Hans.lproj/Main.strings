@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "enable defalut ; selectedBCColor  seted;"; ObjectID = "BGO-od-BNN"; */
+"BGO-od-BNN.text" = "enable defalut ; selectedBCColor  seted;";
+
+/* Class = "UILabel"; text = "enable on ; selectedBCColor  seted;"; ObjectID = "b5F-wb-dXm"; */
+"b5F-wb-dXm.text" = "enable on ; selectedBCColor  seted;";
+
+/* Class = "UILabel"; text = "enable on ; selectedBCColor  defalut;"; ObjectID = "bD5-Ib-nzZ"; */
+"bD5-Ib-nzZ.text" = "enable on ; selectedBCColor  defalut;";
+
+/* Class = "UILabel"; text = "enable off; selectedBCColor  defalut;"; ObjectID = "kSO-wI-P59"; */
+"kSO-wI-P59.text" = "enable off; selectedBCColor  defalut;";
+
+/* Class = "UILabel"; text = "enable defalut ; selectedBCColor  defalut;"; ObjectID = "osf-73-0lE"; */
+"osf-73-0lE.text" = "enable defalut ; selectedBCColor  defalut;";
