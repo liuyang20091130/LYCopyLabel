@@ -24,10 +24,8 @@
     
     {
         LYActionLabel *label = [[LYActionLabel alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 100, 200, 80)];
-        label.backgroundColor = [UIColor redColor];
         label.text = @"LYActionLabel";
-        label.selectedBackgroundColor = [UIColor yellowColor];
-        label.numberOfLines = 0;
+        label.textAlignment = NSTextAlignmentCenter;
         [self.view addSubview:label];
         label.center = CGPointMake(self.view.center.x, label.center.y);
         __weak typeof(self)weakSelf = self;
@@ -50,8 +48,8 @@
     }
     
     {
-        LYCopyLabel *label = [[LYCopyLabel alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 300, 200, 80)];
-        label.backgroundColor = [UIColor whiteColor];
+        LYCopyLabel *label = [[LYCopyLabel alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 200, 200, 80)];
+        label.textAlignment = NSTextAlignmentCenter;
         label.text = @"enable on ; selectedBCColor  seted; created by code";
         label.numberOfLines = 0;
         [self.view addSubview:label];

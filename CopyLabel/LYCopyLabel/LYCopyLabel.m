@@ -97,7 +97,6 @@
 
 -(void)handleLongPress:(UIGestureRecognizer *)recognizer {
     if (recognizer.state == UIGestureRecognizerStateBegan) {
-        NSLog(@"%s \n",__func__);
         [self becomeFirstResponder];
         [self addMenuNotification];
         UIMenuItem *copyLink = [[UIMenuItem alloc] initWithTitle:[self copyTitle] action:@selector(_lyCopy:)];

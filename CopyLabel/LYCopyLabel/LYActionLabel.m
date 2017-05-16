@@ -104,20 +104,14 @@ static NSString * const kActionItemUniquePrefix = @"lyActionItem";
 
 // can response to copy method
 -(BOOL)canPerformAction:(SEL)action withSender:(id)sender {
-    NSLog(@"%s %@",__func__, NSStringFromSelector(action));
-    return ([NSStringFromSelector(action) hasPrefix:kActionItemUniquePrefix] && _actionEnable);// || [super canPerformAction:action withSender:sender];
-}
-
-- (id)forwardingTargetForSelector:(SEL)sel {
-    NSLog(@"%s %@",__func__, NSStringFromSelector(sel));
-    return [super forwardingTargetForSelector:sel];
+    return ([NSStringFromSelector(action) hasPrefix:kActionItemUniquePrefix] && _actionEnable) || [super canPerformAction:action withSender:sender];
 }
 
 + (BOOL)resolveInstanceMethod:(SEL)sel {
-    NSLog(@"%s %@",__func__, NSStringFromSelector(sel));
     NSString *str = NSStringFromSelector(sel);
     if ([str hasPrefix:kActionItemUniquePrefix]) {
         class_addMethod([self class], sel, (IMP)lyActionHandler, "v:@");
+        return YES;
     }
     return [super resolveInstanceMethod:sel];
 }
@@ -131,7 +125,6 @@ static NSString * const kActionItemUniquePrefix = @"lyActionItem";
 
 
 void lyActionHandler(id self, SEL _cmd) {
-    NSLog(@"%s %@",__func__, NSStringFromSelector(_cmd));
     NSString *cmd = NSStringFromSelector(_cmd);
     if (![cmd hasPrefix:kActionItemUniquePrefix] || cmd.length <= kActionItemUniquePrefix.length) {
         return;
@@ -150,16 +143,6 @@ void lyActionHandler(id self, SEL _cmd) {
 
 #pragma mark - Private Methods
 
-// copy text to pasteboard
--(void)_lyCopy:(id)sender {
-    UIPasteboard *pboard = [UIPasteboard generalPasteboard];
-    pboard.string = self.text;
-}
-
-- (void)_lyActionHandler:(id)sender {
-    NSLog(@"%s %@",__func__, NSStringFromSelector(_cmd));
-}
-
 // add long press gesture reconizer
 -(void)addLongPressGestureRecognizer {
     self.userInteractionEnabled = YES;  // enable user interaction
@@ -175,8 +158,7 @@ void lyActionHandler(id self, SEL _cmd) {
 
 -(void)handleLongPress:(UIGestureRecognizer *)recognizer {
     if (recognizer.state == UIGestureRecognizerStateBegan) {
-        NSLog(@"%s \n",__func__);
-        
+
         if (!_actionItems.count) {
             return;
         }
